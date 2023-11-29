@@ -1,9 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Pacifico&display=swap');
 
-
-body {
-}
-
 :root {
     /* zmienne dla palety kolorów */
     --primary-000: #F3E5F5;
@@ -29,8 +25,76 @@ body {
     background-color: var(--backgroundColor);
     color: var(--fontColor);
     font-family: var(--bodyFont);
+    margin: 0;
 }
 
 h1 {
     font-family: var(--headerFont);
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.nav-center {
+    
+    width: 90vw;
+}
+
+.nav-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header > img {
+    width: 8rem;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--primary-500);
+    color: white;
+    border: transparent;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.nav-btn > i {
+    font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--fontColor);
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid var(--primary-500);
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+    color: var(--primary-200);
+}
+
+.show-links {
+    height: 325px;
 }
