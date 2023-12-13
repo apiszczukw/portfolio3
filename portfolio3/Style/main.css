@@ -51,7 +51,7 @@ h1 {
 }
 
 .nav-header > img {
-    width: 8rem;
+    width: 7.5rem;
 }
 
 .btn {
@@ -97,4 +97,61 @@ a {
 
 .show-links {
     height: 325px;
+}
+
+
+@media screen and (min-width: 700px)
+{
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-links {
+        height: auto;
+        flex-direction:row;
+        width: 100%;
+    }
+
+    .nav-center {
+        display: flex;
+        align-items: center;
+        max-width: 1440px;
+    }
+
+    .nav-link {
+        border: none;
+        margin-right: 1.5rem;
+    }
+
+    .nav-header {
+        margin-right: 2.5rem;
+    }
+
+    .contact-link {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+
+/* STOPKA */
+
+.page-footer {
+    background-color: black;
+    color: var(--primary-200);
+    font-family: var(--headerFont);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+}
+
+.main-page {
+    /*background-color: var(--primary-500);*/
+    min-height: calc(100vh - 9rem);
+    width: 90vw;
+    margin-inline: auto;
+    max-width: 1440px;
 }
