@@ -155,3 +155,36 @@ a {
     margin-inline: auto;
     max-width: 1440px;
 }
+
+
+/* PROJEKTY */
+/* start */
+
+.project img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    object-fit:cover;
+    margin: 1rem;
+}
+
+.project p {
+    padding: 0 1.1rem;
+}
+
+p > b {
+    margin-right: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.project {
+    flex: 1;
+}
+
+
+/* koniec PROJEKTY*/
