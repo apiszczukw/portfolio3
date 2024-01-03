@@ -154,6 +154,9 @@ a {
     width: 90vw;
     margin-inline: auto;
     max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -188,3 +191,36 @@ p > b {
 
 
 /* koniec PROJEKTY*/
+
+/* Strona główna */
+
+.welcome {
+    font-size: 2rem;
+    font-family: var(--headerFont);
+    color: var(--primary-100);
+    position: relative;
+}
+
+.welcome::after {
+    content: attr(data-loading-text);
+    color: var(--primary-600);
+    position: absolute;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+
+    animation-name: loading;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
